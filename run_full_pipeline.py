@@ -138,6 +138,15 @@ def main():
             all_success = False
             print(f"\n❌ Pipeline stopped due to error in: {description}")
             break
+    # Generating SIEM logs
+    generate_siem = input("\nGenerate SIEM/ELK logs? (y/n): ")
+    if generate_siem.lower() == 'y':
+        print_header("GENERATING SIEM/ELK LOGS")
+        try:
+            from src.siem_log_generator import main as generate_logs
+            generate_logs()
+        except Exception as e:
+            print(f"Note: SIEM log generation skipped: {e}")
 
     # Generate final report
     if all_success:
