@@ -1,5 +1,9 @@
 Project Overview
 
+Muratkhanov Shynggys
+
+Aitanuly Aibarys
+
 Project Title: Investigating Brute Force Attacks Using SIEM Logs (Splunk/ELK)
 
 This project implements a complete machine learning pipeline for detecting HTTPS brute force attacks using network flow analysis. The system achieves 99.96% accuracy with Random Forest classification and provides full integration capabilities with SIEM systems like Splunk and ELK Stack.
@@ -214,5 +218,6 @@ Presentation Materials: Visualizations and summary slides
 Trained Models: Serialized Logistic Regression and Random Forest
 
 SIEM Integration: Configurations for ELK and Splunk
+
 
 
